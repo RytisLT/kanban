@@ -1,0 +1,16 @@
+{
+  "name": "Kanban",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+      "vscode": {
+          "extensions": [
+              "rooveterinaryinc.roo-cline",
+              "biomejs.biome"
+          ]
+      }
+  },
+  "postCreateCommand": "npm run install:all",
+  "forwardPorts": [5173]
+}
